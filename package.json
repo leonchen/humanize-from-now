@@ -1,0 +1,24 @@
+{
+  "name": "humanize-from-now",
+  "version": "0.0.1",
+  "description": "A tiny function that generates momentjs like time from now string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonchen/humanize-from-now.git"
+  },
+  "keywords": [
+    "fromnow",
+    "duration",
+    "human"
+  ],
+  "author": "Leon Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonchen/humanize-from-now/issues"
+  },
+  "homepage": "https://github.com/leonchen/humanize-from-now#readme"
+}
