@@ -1,10 +1,10 @@
 {
   "name": "humanize-from-now",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tiny function that generates momentjs like time from now string.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc && jest index.test.js",
     "prepublish": "tsc"
   },
   "repository": {
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/leonchen/humanize-from-now#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/jest": "^24.0.11",
+    "chai": "^4.2.0",
+    "jest": "^24.7.1",
     "typescript": "^3.4.3"
   }
 }

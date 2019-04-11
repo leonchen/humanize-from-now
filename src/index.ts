@@ -1,13 +1,13 @@
 // moment fromNow() like humanized duration, see
 // http://momentjs.com/docs/#/displaying/fromnow/
 
-const MS = 1;
-const SECOND = 1000 * MS;
-const MINUTE = 60 * SECOND;
-const HOUR = 60 * MINUTE;
-const DAY = 24 * HOUR;
-const MONTH = 30 * DAY;
-const YEAR = 12 * MONTH;
+export const MS = 1;
+export const SECOND = 1000 * MS;
+export const MINUTE = 60 * SECOND;
+export const HOUR = 60 * MINUTE;
+export const DAY = 24 * HOUR;
+export const MONTH = 30 * DAY;
+export const YEAR = 365 * DAY;
 
 const AS_JUST_NOW = 5 * SECOND;
 const AS_SECONDS = 45 * SECOND;
@@ -21,7 +21,9 @@ const AS_A_MONTH = 45 * DAY;
 const AS_MONTHS = 320 * DAY;
 const AS_A_YEAR = 548 * DAY;
 
-export default function(time: number | string | Date, failover: string = 'N/A'): string {
+export const FAILOVER = 'N/A';
+
+export default function(time: number | string | Date, failover: string = FAILOVER): string {
   const t = typeof time !== 'number' ? new Date(time).getTime() : time;
   if (isNaN(t)) return failover;
   const now = Date.now();
