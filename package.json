@@ -2,9 +2,10 @@
   "name": "humanize-from-now",
   "version": "0.0.2",
   "description": "A tiny function that generates momentjs like time from now string.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/leonchen/humanize-from-now/issues"
   },
-  "homepage": "https://github.com/leonchen/humanize-from-now#readme"
+  "homepage": "https://github.com/leonchen/humanize-from-now#readme",
+  "devDependencies": {
+    "typescript": "^3.4.3"
+  }
 }

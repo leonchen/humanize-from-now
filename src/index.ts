@@ -6,7 +6,7 @@ const SECOND = 1000 * MS;
 const MINUTE = 60 * SECOND;
 const HOUR = 60 * MINUTE;
 const DAY = 24 * HOUR;
-const MONTH = 30.5 * DAY;
+const MONTH = 30 * DAY;
 const YEAR = 12 * MONTH;
 
 const AS_JUST_NOW = 5 * SECOND;
